@@ -20,8 +20,9 @@ def load_and_preprocess() -> pd.DataFrame:
     # --- Load ---
     apps_info     = pd.read_csv("apps_info.csv")
     games_info    = pd.read_csv("games_info.csv")
-    apps_reviews  = pd.read_csv("apps_reviews.csv")
-    games_reviews = pd.read_csv("games_reviews.csv")
+    apps_reviews  = pd.read_parquet("apps_reviews.parquet")
+    games_reviews = pd.read_parquet("games_reviews.parquet")
+
 
     # --- Drop unused columns ---
     apps_info     = apps_info.drop(columns=["score","ratings_count","downloads","content_rating","section"], errors="ignore")
