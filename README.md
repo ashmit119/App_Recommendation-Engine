@@ -1,4 +1,3 @@
-Live link: https://apprecommendation-engine-119.streamlit.app/
 # Hybrid App & Game Recommendation System
 
 A hybrid recommendation engine built on the **Play Market 2025** dataset that combines content-based and review-text similarity to recommend apps and games.
